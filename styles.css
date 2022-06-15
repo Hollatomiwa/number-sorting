@@ -1,0 +1,34 @@
+.sort{
+  background-color: #ebf2aa;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px 0 #7d8062;
+  height: 350px;
+  left: 25%;
+  padding: 10px;
+  position: absolute;
+  top: 30%;
+  width: 50%;
+}
+textarea{
+  margin: 10px 20%;
+  width: 60%;
+  border-radius: 5px;
+}
+.result, .result2{
+  display: none;
+}
+.btns{
+  text-align: center;
+  padding: 20px;
+}
+button{
+  margin: 5px;
+}
+h4{
+  text-align: center;
+  color: blue;
+}
+.ascend, .descend{
+  display: none;
+}

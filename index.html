@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Number Sorting</title>
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container sort">
+    <div class="dropdown">
+      <button class="btn btn-outline-info dropdown-toggle" type="button" id="order" data-bs-toggle="dropdown" aria-expanded="false">
+        Select an order
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="order">
+        <li>
+          <button class="dropdown-item" type="button" onclick="showA()">Ascending Order</button>
+        </li>
+        <li>
+          <button class="dropdown-item" type="button" onclick="showD()">Descending Order</button>
+        </li>
+      </ul>
+    </div>
+    <form class="" action="" method="post">
+      <div class="ascend" id="ascend">
+        <textarea name="numbers" class="numbers" id="numbers" rows="2"></textarea>
+        <textarea name="result" class="result" id="result" rows="2" disabled></textarea>
+        <div class="btns">
+          <button type="button" class="btn btn-outline-info solveBtn" id="ascBtn" name="button" onclick="timeA()">Sort</button>
+        </div>
+      </div>
+      <div class="descend" id="descend">
+        <textarea name="numbers2" class="numbers2" id="numbers2" rows="2"></textarea>
+        <textarea name="result2" class="result2" id="result2" rows="2" disabled></textarea>
+        <div class="btns">
+          <button type="button" class="btn btn-outline-info solveBtn" id="desBtn" name="button" onclick="timeD()">Sort</button>
+        </div>
+      </div>
+    </form>
+    <h4 id="time"></h4>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
